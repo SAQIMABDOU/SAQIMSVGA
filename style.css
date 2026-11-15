@@ -595,16 +595,31 @@ body {
 
 .phone-input-group {
     display: flex;
-    gap: 8px;
+    gap: 6px;
+    width: 100%;
 }
 
 .country-select {
     background: #101223;
     border: 1px solid #2b2f63;
     color: #fff;
-    padding: 8px;
+    padding: 8px 4px;
     border-radius: 6px;
-    font-size: 12px;
+    font-size: 13px;
+    outline: none;
+    flex: 0 0 75px; /* Ardd sɣir w m-nasib ghir l + l-arkam */
+    text-align: center;
+}
+
+.phone-input-group input[type="tel"] {
+    flex: 1;
+    width: auto;
+    padding: 8px 12px;
+    background: #101223;
+    border: 1px solid #2b2f63;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 13px;
     outline: none;
 }
 
